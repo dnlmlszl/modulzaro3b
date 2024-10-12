@@ -35,7 +35,7 @@ public class Program {
     }
 
     private void learnNewLanguages(Ember ember) {
-        String newLang = getStringInput("Add meg a megtanult új nyelv nevét: ");
+        String newLang = getStringInput("Add meg az új nyelv nevét: ");
         ember.addLanguage(newLang);
         System.out.println(ember.getName() + " új nyelvet tanult meg: " + newLang);
     }
@@ -48,7 +48,7 @@ public class Program {
             System.out.println("Az alábbi idegen nyelveken beszélek: ");
 
             if (ember.getForeignLanguages().isEmpty()) {
-                System.out.println("Nincsenek megadott idegen nyelvek.");
+                System.out.println("Nem beszélek idegen nyelveket.");
             } else {
                 for (String language : ember.getForeignLanguages()) {
                     System.out.println("- " + language);
@@ -81,7 +81,7 @@ public class Program {
             } else if (input.equals("false") || input.equals("nem")) {
                 return false;
             } else {
-                System.out.println("Érvénytelen válasz. Kérlek add meg, hogy igaz (true/igen) vagy hamis (false/nem): ");
+                System.out.println("Érvénytelen válasz. Kérlek add meg, hogy igen (true) vagy nem (false): ");
             }
         }
     }
