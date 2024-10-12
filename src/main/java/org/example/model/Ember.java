@@ -41,6 +41,14 @@ public class Ember {
         this.age = age;
     }
 
+    public List<String> getForeignLanguages() {
+        return foreignLanguages;
+    }
+
+    public void setForeignLanguages(List<String> foreignLanguages) {
+        this.foreignLanguages = foreignLanguages;
+    }
+
     public void addLanguage(String language) {
         foreignLanguages.add(language);
     }
